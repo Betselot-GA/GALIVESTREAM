@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Live Stream</title>
+</head>
+
+<body style="background-color: rgba(224, 144, 22, 0.2);">
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg"
+        style="background-color: rgba(8, 8, 55, 0.9);width: 1400px;margin-left: -120px;">
+        <a class="navbar-brand">
+            <img src="./assets/images/esssLogo.png" alt="esss logo" width="20%">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav navbar-align">
+                <li class="nav-item not-active" style="padding-right: 5%;">
+                    <a class="nav-link not-active" href="index">Home</a>
+                </li>
+                <li class="nav-item not-active" style="padding-left: 8%;width: 35%;">
+                    <a class="nav-link not-active" href="livestream">LiveStream</a>
+                </li>
+                <li class="nav-item" style="padding-left: 10%;">
+                    <a class="nav-link active-nav" href="exhibition">Exhibition</a>
+                </li>
+
+                <li class="nav-item" style="padding-left: 10%;">
+                    <a class="nav-link not-active" href="about">About</a>
+                </li>
+                <li>
+                    <a href="/users/logout" class="btn btn-secondary ml-3" style="background-color: transparent;">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5" style="width: 70%;">
+
+        <form class="form-group" action="/admin" method="POST">
+            <!-- Name input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form4Example1">Title</label>
+                <input type="text" name="title" id="form4Example1" class="form-control" />
+                
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form4Example2">Presented By</label>
+                <input type="text" name="presentedBy" id="form4Example2" class="form-control" />
+               
+            </div>
+
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form4Example3">Presentation Description</label>
+                <textarea class="form-control" name="description" id="form4Example3" rows="4"></textarea>
+               
+            </div>
+
+            <div class="form-outline mt-3">
+                <label class="form-label">Upload Video</label>
+                <input class="form-control form-control-lg" name="videoFile" id="formFileLg" type="text" />
+
+            </div>
+            <div class="form-outline mt-3">
+                <label class="form-label">Upload Resources</label>
+                <input class="form-control form-control-lg" name="resourceFile" id="formFileLg" type="text" />
+            </div>
+            <button class="btn btn-dark mt-5" type="submit">Submit</button>
+        </form>
+       
+
+
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
