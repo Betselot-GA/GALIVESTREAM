@@ -512,8 +512,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 @media (max-width: 954px) {
   #intro {
+    margin-left: -500px;
     background-attachment: fixed;
-    margin-left: -400px;
   }
 }
 #intro:before {
