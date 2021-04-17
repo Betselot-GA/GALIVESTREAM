@@ -507,13 +507,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (min-width: 954px) {
   #intro {
-    margin-left: -400px;
+    margin-left: -100px;
   }
 }
 @media (max-width: 954px) {
   #intro {
     background-attachment: fixed;
-    margin-left: 100px;
+    margin-left: -400px;
   }
 }
 #intro:before {
