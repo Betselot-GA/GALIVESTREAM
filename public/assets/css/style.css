@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width:1900px){
   .introduction{
     background-color:rgba(6, 12, 34, 0.8);
-    width: 2000px;
+    width: 1800px;
     height: 100%;
     overflow-x: hidden;
   }
@@ -513,7 +513,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 954px) {
   #intro {
     background-attachment: fixed;
-    margin-left: -950px;
   }
 }
 #intro:before {
