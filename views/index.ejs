@@ -1,857 +1,729 @@
-<%- include ("./partials/header"); %>
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- ======= Intro Section ======= -->
-    <section id="intro">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tefer Events</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="icon" href="./assets/img/teferLogo.jpg">
+  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: TheEvent - v2.3.1
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left" >
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#intro">The<span>Event</span></a></h1>-->
+        <a href="./index" class="scrollto"><img src="assets/img/essslogo.png" alt="" title=""></a>
+      </div>
+      <p class="lead mb-3" style="position: absolute;margin-left: 100px;color: #d45500;">Welcome <%= name %></p>
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="./index">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#venue">Venue</a></li>
+          <li><a href="#hotels">Live Stream</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="./users/logout">Logout</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Intro Section ======= -->
+  <div class="introduction">
+  <section id="intro" style="background-color: rgba(6, 12, 34, 0.8);">
         <div class="intro-container" data-aos="zoom-in" data-aos-delay="100">
-            <h1 class="mb-4 pb-0">The Annual<br><span>General</span> Assembly</h1>
-            <p class="mb-4 pb-0">10-12 December, 5 kilo Addis Ababa Institute of Technology, Addis Ababa</p>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
-                data-autoplay="true"></a>
-            <a href="#about" class="about-btn scrollto">About The Event</a>
+          <h1 class="mb-4 pb-0">The Annual<br><span>General</span> Assembly Online Session</h1>
+          <p class="mb-4 pb-0">17-18 April</p>
+          <a href="https://youtu.be/wTFrTZYHS90" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          <a href="#about" class="about-btn scrollto" >About The Event</a>
         </div>
-    </section><!-- End Intro Section -->
-
-    <main id="main">
-
-        <!-- ======= About Section ======= -->
-        <section id="about">
-            <div class="container" data-aos="fade-up">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h2>About The Event</h2>
-                        <p>Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet
-                            eius aut
-                            accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt
-                            inventore in
-                            est ut optio sequi unde.</p>
-                    </div>
-                    <div class="col-lg-3">
-                        <h3>Where</h3>
-                        <p>5 kilo Addis Ababa Technology Institute, Addis Ababa</p>
-                    </div>
-                    <div class="col-lg-3">
-                        <h3>When</h3>
-                        <p>Saturday and Sunday<br>10-12 April</p>
-                    </div>
-                </div>
-            </div>
-        </section><!-- End About Section -->
-
-        <!-- ======= Speakers Section ======= -->
-        <section id="speakers">
-            <div class="container" data-aos="fade-up">
-                <div class="section-header">
-                    <h2>Event Speakers</h2>
-                    <p>Here are some of our speakers</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-                            <img src="assets/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
-                            <div class="details">
-                                <h3><a href="speaker-details">Brenden Legros</a></h3>
-                                <p>Quas alias incidunt</p>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-                            <img src="assets/img/speakers/2.jpg" alt="Speaker 2" class="img-fluid">
-                            <div class="details">
-                                <h3><a href="speaker-details.html">Hubert Hirthe</a></h3>
-                                <p>Consequuntur odio aut</p>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-                            <img src="assets/img/speakers/3.jpg" alt="Speaker 3" class="img-fluid">
-                            <div class="details">
-                                <h3><a href="speaker-details.html">Cole Emmerich</a></h3>
-                                <p>Fugiat laborum et</p>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-                            <img src="assets/img/speakers/4.jpg" alt="Speaker 4" class="img-fluid">
-                            <div class="details">
-                                <h3><a href="speaker-details.html">Jack Christiansen</a></h3>
-                                <p>Debitis iure vero</p>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-                            <img src="assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
-                            <div class="details">
-                                <h3><a href="speaker-details.html">Alejandrin Littel</a></h3>
-                                <p>Qui molestiae natus</p>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-                            <img src="assets/img/speakers/6.jpg" alt="Speaker 6" class="img-fluid">
-                            <div class="details">
-                                <h3><a href="speaker-details.html">Willow Trantow</a></h3>
-                                <p>Non autem dicta</p>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section><!-- End Speakers Section -->
-
-        <!-- ======= Schedule Section ======= -->
-        <section id="schedule" class="section-with-bg">
-            <div class="container" data-aos="fade-up">
-                <div class="section-header">
-                    <h2>Event Schedule</h2>
-                    <p>Here is our event schedule</p>
-                </div>
-
-                <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Saturday</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">Sunday</a>
-                    </li>
-                </ul>
-
-                <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia.
-                    Eius
-                    necessitatibus voluptatem quis labore perspiciatis quia.</h3>
-
-                <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-
-                    <!-- Schdule Day 1 -->
-                    <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-
-                        <div class="row schedule-item">
-                            <div class="col-md-2"><time>09:30 AM</time></div>
-                            <div class="col-md-10">
-                                <h4>Registration</h4>
-                                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
-                            </div>
-                        </div>
-
-                        <div class="row schedule-item">
-                            <div class="col-md-2"><time>10:00 AM</time></div>
-                            <div class="col-md-10">
-                                <div class="speaker">
-                                    <img src="assets/img/speakers/1.jpg" alt="Brenden Legros">
-                                </div>
-                                <h4>Keynote <span>Brenden Legros</span></h4>
-                                <p>Facere provident incidunt quos voluptas.</p>
-                            </div>
-                        </div>
-
-                        <div class="row schedule-item">
-                            <div class="col-md-2"><time>11:00 AM</time></div>
-                            <div class="col-md-10">
-                                <div class="speaker">
-                                    <img src="assets/img/speakers/2.jpg" alt="Hubert Hirthe">
-                                </div>
-                                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-                            </div>
-                        </div>
-
-                        <div class="row schedule-item">
-                            <div class="col-md-2"><time>12:00 AM</time></div>
-                            <div class="col-md-10">
-                                <div class="speaker">
-                                    <img src="assets/img/speakers/3.jpg" alt="Cole Emmerich">
-                                </div>
-                                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-                            </div>
-                        </div>
-
-                        <div class="row schedule-item">
-                            <div class="col-md-2"><time>02:00 PM</time></div>
-                            <div class="col-md-10">
-                                <div class="speaker">
-                                    <img src="assets/img/speakers/4.jpg" alt="Jack Christiansen">
-                                </div>
-                                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-                                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-                            </div>
-                        </div>
-
-                        <div class="row schedule-item">
-                            <div class="col-md-2"><time>03:00 PM</time></div>
-                            <div class="col-md-10">
-                                <div class="speaker">
-                                    <img src="assets/img/speakers/5.jpg" alt="Alejandrin Littel">
-                                </div>
-                                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
-                                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
-                            </div>
-                        </div>
-
-                        <div class="row schedule-item">
-                            <div class="col-md-2"><time>04:00 PM</time></div>
-                            <div class="col-md-10">
-                                <div class="speaker">
-                                    <img src="assets/img/speakers/6.jpg" alt="Willow Trantow">
-                                </div>
-                                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-                                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- End Schdule Day 1 -->
-
-                    <!-- Schdule Day 2 -->
-                    <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
-
-                        <div class="row schedule-item">
-                            <div class="col-md-2"><time>10:00 AM</time></div>
-                            <div class="col-md-10">
-                                <div class="speaker">
-                                    <img src="assets/img/speakers/1.jpg" alt="Brenden Legros">
-                                </div>
-                                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
-                                <p>Facere provident incidunt quos voluptas.</p>
-                            </div>
-                        </div>
-
-                        <div class="row schedule-item">
-                            <div class="col-md-2"><time>11:00 AM</time></div>
-                            <div class="col-md-10">
-                                <div class="speaker">
-                                    <img src="assets/img/speakers/2.jpg" alt="Hubert Hirthe">
-                                </div>
-                                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-                            </div>
-                        </div>
-
-                        <div class="row schedule-item">
-                            <div class="col-md-2"><time>12:00 AM</time></div>
-                            <div class="col-md-10">
-                                <div class="speaker">
-                                    <img src="assets/img/speakers/3.jpg" alt="Cole Emmerich">
-                                </div>
-                                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-                            </div>
-                        </div>
-
-                        <div class="row schedule-item">
-                            <div class="col-md-2"><time>02:00 PM</time></div>
-                            <div class="col-md-10">
-                                <div class="speaker">
-                                    <img src="assets/img/speakers/4.jpg" alt="Jack Christiansen">
-                                </div>
-                                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-                                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-                            </div>
-                        </div>
-
-                        <div class="row schedule-item">
-                            <div class="col-md-2"><time>03:00 PM</time></div>
-                            <div class="col-md-10">
-                                <div class="speaker">
-                                    <img src="assets/img/speakers/5.jpg" alt="Alejandrin Littel">
-                                </div>
-                                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
-                                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
-                            </div>
-                        </div>
-
-                        <div class="row schedule-item">
-                            <div class="col-md-2"><time>04:00 PM</time></div>
-                            <div class="col-md-10">
-                                <div class="speaker">
-                                    <img src="assets/img/speakers/6.jpg" alt="Willow Trantow">
-                                </div>
-                                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-                                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- End Schdule Day 2 -->
-
-
-
-                </div>
-
-            </div>
-
-        </section><!-- End Schedule Section -->
-
-        <!-- ======= Venue Section ======= -->
-        <section id="venue">
-
-            <div class="container-fluid" data-aos="fade-up">
-
-                <div class="section-header">
-                    <h2>ESSS General Assembly Venue</h2>
-                </div>
-
-                <div class="row no-gutters">
-                    <div class="col-lg-6 venue-map">
-                        <iframe
-                            src="https://maps.google.com/maps?q=Addis%20Ababa%20Institute%20of%20Technology&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" style="border:0" allowfullscreen></iframe>
-                           
-                    </div>
-
-                    <div class="col-lg-6 venue-info">
-                        <div class="row justify-content-center">
-                            <div class="col-11 col-lg-8">
-                                <h3>5 kilo Addis Ababa Technology Institute, Addis Ababa</h3>
-                                <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae
-                                    ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus.
-                                    Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-        </section><!-- End Venue Section -->
-
-        <!-- ======= Video streaming Section ======= -->
-        <section id="hotels" class="section-with-bg">
-            <% const objPost=posts.pop() %>
-                <% console.log("Current post: " + objPost) %>
-                <% console.log("previous post: " + posts[posts.length-1]) %>
-
-                <div class=" container" data-aos="fade-up">
-                    <div class="section-header">
-                        <h2>Live Stream</h2>
-                        <p>Currently is live stream</p>
-                    </div>
-                   
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="<%= objPost.video %>" allowfullscreen></iframe>
-                    </div>
-                    <div class="row p-5">
-                        <div class="col-md-8">
-                           
-
-                            <h2 style="text-align: center;">Title: <%= objPost.title %>
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 mt-2">
-                            <p>Presented By <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30"
-                                    height="30" viewBox="0 0 172 172" style=" fill:#000000;margin-left: 10px;">
-                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
-                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                        <path d="M0,172v-172h172v172z" fill="none"></path>
-                                        <g fill="#d45500">
-                                            <path
-                                                d="M10.32,24.08c-5.65719,0 -10.32,4.66281 -10.32,10.32v103.2c0,5.65719 4.66281,10.32 10.32,10.32h151.36c5.65719,0 10.32,-4.66281 10.32,-10.32v-103.2c0,-5.65719 -4.66281,-10.32 -10.32,-10.32zM10.32,30.96h151.36c1.94844,0 3.44,1.49156 3.44,3.44v103.2c0,1.94844 -1.49156,3.44 -3.44,3.44h-29.67c-5.83187,-3.88344 -12.44312,-6.1275 -17.845,-8.385c-5.53625,-2.31125 -9.21812,-4.60906 -10.4275,-7.4175c-0.28219,-3.56094 -0.34937,-6.47687 -0.3225,-9.89c0.33594,-0.38969 0.86,-0.63156 1.1825,-1.075c0.81969,-1.12875 1.63938,-2.49937 2.365,-3.9775c1.22281,-2.51281 2.05594,-5.4825 2.58,-8.4925c0.90031,-0.51062 1.85438,-0.57781 2.58,-1.505c1.47813,-1.88125 2.4725,-4.54187 2.9025,-8.17c0.37625,-3.14437 -0.645,-5.36156 -1.935,-7.095c1.42438,-4.66281 3.17125,-11.94594 2.58,-19.565c-0.33594,-4.21937 -1.3975,-8.58656 -3.9775,-12.1475c-2.44562,-3.38625 -6.45,-5.76469 -11.5025,-6.665c-3.29219,-3.64156 -8.45219,-5.375 -14.5125,-5.375c-13.66594,0.25531 -22.64219,5.93938 -26.445,14.62c-3.60125,8.22375 -2.76812,18.44969 -0.215,29.025c-1.34375,1.73344 -2.43219,3.9775 -2.0425,7.2025c0.43,3.62813 1.42438,6.28875 2.9025,8.17c0.72563,0.92719 1.67969,1.00781 2.58,1.505c0.5375,3.02344 1.42438,5.97969 2.6875,8.4925c0.73906,1.47813 1.53188,2.84875 2.365,3.9775c0.3225,0.43 0.84656,0.68531 1.1825,1.075c0.02688,3.37281 0.05375,6.28875 -0.215,9.7825c-1.14219,2.86219 -4.89125,5.18688 -10.535,7.525c-5.42875,2.2575 -11.99969,4.50156 -17.845,8.385h-29.7775c-1.94844,0 -3.44,-1.49156 -3.44,-3.44v-103.2c0,-1.94844 1.49156,-3.44 3.44,-3.44zM85.6775,48.16c0.04031,0 0.06719,0 0.1075,0c5.72438,0.02688 9.29875,1.72 10.2125,3.3325l0.86,1.505l1.72,0.215c3.91031,0.5375 5.97969,2.05594 7.525,4.1925c1.54531,2.13656 2.41875,5.18688 2.6875,8.6c0.5375,6.82625 -1.43781,14.86188 -2.6875,18.5975l-0.86,2.6875l2.365,1.3975c-0.33594,-0.20156 0.91375,0.36281 0.645,2.58c-0.33594,2.78156 -1.06156,4.16563 -1.505,4.73c-0.44344,0.56438 -0.56437,0.44344 -0.43,0.43l-2.9025,0.215l-0.215,2.9025c-0.25531,2.41875 -1.33031,5.38844 -2.4725,7.74c-0.57781,1.1825 -1.10187,2.20375 -1.6125,2.9025c-0.30906,0.41656 -0.52406,0.72563 -0.645,0.86l-1.935,0.9675v2.0425c0,4.17906 -0.12094,7.57875 0.3225,12.47v0.5375l0.215,0.43c2.31125,6.19469 8.35813,9.08375 14.405,11.61c1.43781,0.60469 2.71438,1.34375 4.1925,1.935h-59.2325c1.47813,-0.59125 2.74125,-1.33031 4.1925,-1.935c6.07375,-2.52625 12.09375,-5.40187 14.405,-11.61l0.215,-0.43v-0.5375c0.44344,-4.89125 0.3225,-8.29094 0.3225,-12.47v-2.0425l-1.72,-0.86c0.01344,0.01344 0,-0.05375 -0.1075,-0.1075c-0.14781,-0.13437 -0.44344,-0.44344 -0.7525,-0.86c-0.52406,-0.69875 -1.12875,-1.72 -1.72,-2.9025c-1.1825,-2.35156 -2.21719,-5.34812 -2.4725,-7.74l-0.215,-2.795l-2.9025,-0.3225c0.12094,0.01344 0.01344,0.13438 -0.43,-0.43c-0.44344,-0.56437 -1.16906,-1.94844 -1.505,-4.73c-0.26875,-2.21719 0.98094,-2.78156 0.645,-2.58l2.15,-1.29l-0.645,-2.4725c-2.71437,-10.44094 -3.07719,-19.92781 -0.3225,-26.23c2.74125,-6.27531 8.19688,-10.29312 20.1025,-10.535z">
-                                            </path>
-                                        </g>
-                                    </g>
-                                </svg></p>
-                            <hr style="border-top: 1px solid #d45500;">
-                            <p class="mt-3">
-                                <%= objPost.presentedBy %>
-                            </p>
-                        </div>
-                        <div class="col-md-4 mt-2">
-                            <p>Presentation Description <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                    width="30" height="30" viewBox="0 0 172 172"
-                                    style=" fill:#000000;margin-left: 10px;">
-                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
-                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                        <path d="M0,172v-172h172v172z" fill="none"></path>
-                                        <g fill="#d45500">
-                                            <path
-                                                d="M152.5425,6.88c-3.23844,0 -6.57094,1.19594 -9.03,3.655l-4.6225,4.73l17.845,17.845c-0.01344,0.01344 4.73,-4.6225 4.73,-4.6225c4.93156,-4.93156 4.93156,-13.02094 0,-17.9525c-2.4725,-2.4725 -5.68406,-3.655 -8.9225,-3.655zM133.3,20.425l-78.1525,78.1525l-0.215,1.075l-3.225,16.6625l-1.075,5.0525l5.0525,-1.075l16.6625,-3.225l1.075,-0.215l78.1525,-78.1525l-4.945,-4.8375l-76.54,76.4325l-8.385,-8.385l76.4325,-76.54zM10.32,34.4c-1.90812,0 -3.44,1.54531 -3.44,3.44v123.84c0,1.89469 1.53188,3.44 3.44,3.44h123.84c1.90813,0 3.44,-1.54531 3.44,-3.44v-99.76l-6.88,6.88v89.44h-116.96v-116.96h89.44l6.88,-6.88z">
-                                            </path>
-                                        </g>
-                                    </g>
-                                </svg></p>
-                            <hr style="border-top: 1px solid #d45500;">
-                            <p class="mt-3">
-                                <%= objPost.description %>
-                            </p>
-                        </div>
-                        <div class="col-md-4 mt-2">
-                            <a href="<%= objPost.resource %>" target="_blank">View Shared Files <svg
-                                    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
-                                    viewBox="0 0 172 172" style=" fill:#000000;margin-left: 10px;">
-                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
-                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                        <path d="M0,172v-172h172v172z" fill="none"></path>
-                                        <g fill="#d45500">
-                                            <path
-                                                d="M106.64,17.2c-2.92937,0 -6.16781,1.16906 -8.93594,3.7625c-2.76813,2.60688 -4.82406,6.74563 -4.82406,12.06688c0,3.85656 1.35719,6.27531 2.28438,8.77469c1.04812,2.9025 4.38062,10.50812 7.60562,17.80469c2.10969,4.79719 2.92938,6.62469 4.085,9.19125h-82.775c-7.55187,0 -13.76,6.20813 -13.76,13.76c0,7.55188 6.20813,13.76 13.76,13.76h32.73375c-0.86,1.73344 -1.77375,3.46688 -1.77375,5.84531c0,5.03906 2.33813,8.47906 4.63594,10.79031c-2.31125,2.10969 -4.63594,5.375 -4.63594,10.19906c0,7.82063 4.97188,11.23375 8.31781,13.03438c-0.72563,1.84094 -1.43781,4.28656 -1.43781,7.25625c0,3.56094 1.77375,6.9875 4.71656,9.83625c2.92937,2.83531 7.26969,4.95844 12.48344,4.95844h51.6c17.01188,0 30.96,-13.94812 30.96,-30.96v-32.34406c0,-6.51719 -1.94844,-12.77906 -5.805,-18.1675c0,0 0,-0.01344 -0.01344,-0.01344l-38.52531,-52.97062c-2.59344,-4.15219 -6.59781,-6.58438 -10.69625,-6.58438zM106.64,24.08c1.31688,0 3.42656,0.91375 4.95844,3.49375c0.05375,0.08063 0.12094,0.16125 0.17469,0.24188l38.51187,52.95719c3.02344,4.24625 4.515,8.98969 4.515,14.16312v32.34406c0,13.26281 -10.81719,24.08 -24.08,24.08h-51.6c-3.38625,0 -5.92594,-1.31687 -7.72656,-3.03687c-1.78719,-1.72 -2.59344,-3.96406 -2.59344,-4.87781c0,-4.085 1.78719,-6.62469 1.78719,-6.62469c0.61813,-0.87344 0.77938,-1.97531 0.47031,-2.99656c-0.3225,-1.02125 -1.10187,-1.8275 -2.09625,-2.20375c0,0 -7.04125,-2.795 -7.04125,-8.46563c0,-5.03906 4.71656,-6.78594 4.71656,-6.78594c1.23625,-0.49719 2.06937,-1.65281 2.16344,-2.98312c0.08063,-1.33031 -0.61812,-2.58 -1.77375,-3.225c0,0 -5.10625,-2.95625 -5.10625,-7.99531c0,-3.45344 1.97531,-5.24063 3.74906,-6.42313c1.26312,-0.83312 1.8275,-2.40531 1.3975,-3.85656c-0.44344,-1.45125 -1.77375,-2.44563 -3.30563,-2.44563h-39.68094c-3.80281,0 -6.88,-3.07719 -6.88,-6.88c0,-3.80281 3.07719,-6.88 6.88,-6.88h88.05594c1.16906,0 2.2575,-0.59125 2.88906,-1.57219c0.645,-0.98094 0.73906,-2.21719 0.25531,-3.27875c0,0 -2.99656,-6.69188 -6.22156,-14.00188c-3.225,-7.29656 -6.74562,-15.48 -7.43094,-17.38812c-0.01344,-0.02688 -0.01344,-0.04031 -0.02688,-0.05375c-1.12875,-3.02344 -1.84094,-4.03125 -1.84094,-6.35594c0,-3.64156 1.20938,-5.68406 2.64719,-7.04125c1.45125,-1.35719 3.38625,-1.90813 4.23281,-1.90813z">
-                                            </path>
-                                        </g>
-                                    </g>
-                                </svg></a>
-                            <hr style="border-top: 1px solid #d45500;">
-                        </div>
-                    </div>
-                </div>
-        </section><!-- End Video Streaming Section -->
-
-        <!-- ======= Gallery Section ======= -->
-        <section id="gallery">
-
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-header">
-                    <h2>Gallery</h2>
-                    <p>15th General Assembly</p>
-                </div>
-
-
-                <div class="owl-carousel gallery-carousel" data-aos="fade-up" data-aos-delay="100">
-                    <a href="./assets/img/GAs/GA 1.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 1.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 2.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 2.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 3.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 3.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 4.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 4.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 5.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 5.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 6.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 6.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 7.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 7.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 8.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 8.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 9.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 9.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 10.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 10.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 11.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 11.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 12.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 12.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 13.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 13.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 14.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 14.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 15.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 15.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 16.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 16.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 17.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 17.png" alt=""></a>
-                    <a href="./assets/img/GAs/GA 18.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/GAs/GA 18.png" alt=""></a>
-                </div>
-
-                <div class="section-header mt-5">
-                    <p>AstroBus Ethiopia</p>
-                </div>
-
-
-                <div class="owl-carousel gallery-carousel" data-aos="fade-up" data-aos-delay="100">
-                    <a href="./assets/img/AstroBus/አስትሮባስ 5.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/AstroBus/አስትሮባስ 5.png" alt=""></a>
-                    <a href="./assets/img/AstroBus/አስትሮባስ 7.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/AstroBus/አስትሮባስ 7.png" alt=""></a>
-                    <a href="./assets/img/AstroBus/አስትሮባስ 23.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/AstroBus/አስትሮባስ 23.png" alt=""></a>
-                    <a href="./assets/img/AstroBus/አስትሮባስ 9.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/AstroBus/አስትሮባስ 9.png" alt=""></a>
-                    <a href="./assets/img/AstroBus/አስትሮባስ 10.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/AstroBus/አስትሮባስ 10.png" alt=""></a>
-                    <a href="./assets/img/AstroBus/አስትሮባስ 11.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/AstroBus/አስትሮባስ 11.png" alt=""></a>
-                    <a href="./assets/img/AstroBus/አስትሮባስ 24.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/AstroBus/አስትሮባስ 24.png" alt=""></a>
-                    <a href="./assets/img/AstroBus/አስትሮባስ 14.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/AstroBus/አስትሮባስ 14.png" alt=""></a>
-                    <a href="./assets/img/AstroBus/አስትሮባስ 26.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/AstroBus/አስትሮባስ 26.png" alt=""></a>
-                    <a href="./assets/img/AstroBus/አስትሮባስ 27.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/AstroBus/አስትሮባስ 27.png" alt=""></a>
-                    <a href="./assets/img/AstroBus/አስትሮባስ 29.png" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/AstroBus/አስትሮባስ 29.png" alt=""></a>
-                </div>
-
-                <div class="section-header mt-5">
-                    <p>Public Outreach</p>
-                </div>
-
-
-                <div class="owl-carousel gallery-carousel" data-aos="fade-up" data-aos-delay="100">
-                    <a href="./assets/img/Outreach/PE-01.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-01.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-02.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-02.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-03.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-03.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-04.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-04.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-05.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-05.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-06.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-06.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-07.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-07.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-08.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-08.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-09.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-09.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-10.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-10.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-11.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-11.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-12.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-12.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-13.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-13.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-14.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-14.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-15.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-15.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-16.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-16.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-21.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-21.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-32.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-32.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-33.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-33.jpg" alt=""></a>
-                    <a href="./assets/img/Outreach/PE-34.jpg" class="venobox" data-gall="gallery-carousel"><img
-                            src="./assets/img/Outreach/PE-34.jpg" alt=""></a>
-                </div>
-
-                <div class="section-header mt-5">
-                    <p>Solar Eclipse</p>
-                </div>
-            
-
-            <div class="owl-carousel gallery-carousel" data-aos="fade-up" data-aos-delay="100">
-                <a href="./assets/img/eclipse/tis abay.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/tis abay.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 1.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 1.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 2.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 2.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 3.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 3.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 4.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 4.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 5.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 5.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 6.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 6.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 7.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 7.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 8.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 8.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 9.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 9.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 10.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 10.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 11.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 11.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 12.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 12.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 13.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 13.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 14.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 14.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 15.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 15.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 16.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 16.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 17.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 17.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ 18.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ 18.png" alt=""></a>
-                <a href="./assets/img/eclipse/ግርዶሽ.png" class="venobox" data-gall="gallery-carousel"><img
-                        src="./assets/img/eclipse/ግርዶሽ.png" alt=""></a>
-            </div>
+      
+  </section><!-- End Intro Section -->
 </div>
+  <main id="main">
 
-        </section><!-- End Gallery Section -->
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>About The Event</h2>
+            <p>Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut
+              accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in
+              est ut optio sequi unde.</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>Where</h3>
+            <p>Online</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>When</h3>
+            <p>Saturday and Sunday<br>17-18 April</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
 
-        <!-- ======= Supporters Section ======= -->
-        <section id="supporters" class="section-with-bg">
+    <!-- ======= Speakers Section ======= -->
+    <section id="speakers">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>GA Speakers</h2>
+          <p>Here are some of our speakers</p>
+        </div>
 
-            <div class="container" data-aos="fade-up">
-                <div class="section-header">
-                    <h2>Sponsors</h2>
-                </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/speakers/Henok Kemal.jpg" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3>Henok Kemal</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/Mikias.jpg" alt="Speaker 2" class="img-fluid">
+              <div class="details">
+                <h3>Mikiyas Kashu</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/speakers/Mirjana.jpg" alt="Speaker 3" class="img-fluid">
+              <div class="details">
+                <h3>Mirjana</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/speakers/Mr Seena.jpg" alt="Speaker 4" class="img-fluid">
+              <div class="details">
+                <h3>Mr Seena</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/speakers/Ruth Zeru.jpg" alt="Speaker 5" class="img-fluid">
+              <div class="details">
+                <h3>Ruth Zeru</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+    </section><!-- End Speakers Section -->
 
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="supporter-logo">
-                            <img src="assets/img/supporters/1.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
+    <!-- ======= Schedule Section ======= -->
+    <section id="schedule" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>GA Schedule</h2>
+          <p>Here is our event schedule</p>
+        </div>
 
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="supporter-logo">
-                            <img src="assets/img/supporters/2.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
+        <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item">
+            <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Saturday</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">Sunday</a>
+          </li>
+        </ul>
 
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="supporter-logo">
-                            <img src="assets/img/supporters/3.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
+        <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
+          necessitatibus voluptatem quis labore perspiciatis quia.</h3>
 
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="supporter-logo">
-                            <img src="assets/img/supporters/4.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
+        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="supporter-logo">
-                            <img src="assets/img/supporters/5.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
+          <!-- Schdule Day 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
 
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="supporter-logo">
-                            <img src="assets/img/supporters/6.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="supporter-logo">
-                            <img src="assets/img/supporters/7.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="supporter-logo">
-                            <img src="assets/img/supporters/8.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                </div>
-
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>09:30 AM</time></div>
+              <div class="col-md-10">
+                <h4>Registration</h4>
+                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
+              </div>
             </div>
 
-        </section><!-- End Sponsors Section -->
-
-        <!-- =======  F.A.Q Section ======= -->
-        <section id="faq">
-
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-header">
-                    <h2>F.A.Q </h2>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/1.jpg" alt="Brenden Legros">
                 </div>
-
-                <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="col-lg-9">
-                        <ul id="faq-list">
-
-                            <li>
-                                <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at
-                                    lectus urna duis? <i class="fa fa-minus-circle"></i></a>
-                                <div id="faq1" class="collapse" data-parent="#faq-list">
-                                    <p>
-                                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
-                                        laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
-                                        rhoncus dolor purus non.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius
-                                    morbi enim nunc faucibus a pellentesque? <i class="fa fa-minus-circle"></i></a>
-                                <div id="faq2" class="collapse" data-parent="#faq-list">
-                                    <p>
-                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
-                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur
-                                    adipiscing elit pellentesque habitant morbi? <i class="fa fa-minus-circle"></i></a>
-                                <div id="faq3" class="collapse" data-parent="#faq-list">
-                                    <p>
-                                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
-                                        Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
-                                        suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
-                                        convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus.
-                                    Aliquam eleifend mi in nulla? <i class="fa fa-minus-circle"></i></a>
-                                <div id="faq4" class="collapse" data-parent="#faq-list">
-                                    <p>
-                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
-                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec
-                                    nam aliquam sem et tortor consequat? <i class="fa fa-minus-circle"></i></a>
-                                <div id="faq5" class="collapse" data-parent="#faq-list">
-                                    <p>
-                                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim
-                                        suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.
-                                        Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit
-                                        turpis cursus in
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus
-                                    ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i
-                                        class="fa fa-minus-circle"></i></a>
-                                <div id="faq6" class="collapse" data-parent="#faq-list">
-                                    <p>
-                                        Ethiopian space science society was established in 2004, with 47 founding members. It is a non-profitable organization constitute of members from Astronomy , Astrophysics , Space Science and technology and related field of professionals as well as individual and institutional members interested in the above fields. The society has more than 10,000 individual  members, 28 branches associations, 52 institutional members  and 100 school space clubs
-                                    </p>
-                                </div>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-
+                <h4>Keynote <span>Brenden Legros</span></h4>
+                <p>Facere provident incidunt quos voluptas.</p>
+              </div>
             </div>
 
-        </section><!-- End  F.A.Q Section -->
-
-
-
-
-
-
-        <!-- ======= Contact Section ======= -->
-        <section id="contact" class="section-bg">
-
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-header">
-                    <h2>Contact Us</h2>
-                    <p>Keep in touch</p>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/2.jpg" alt="Hubert Hirthe">
                 </div>
-
-                <div class="row contact-info">
-
-                    <div class="col-md-4">
-                        <div class="contact-address">
-                            <i class="ion-ios-location-outline"></i>
-                            <h3>Address</h3>
-                            <address>5 kilo, Addis Ababa Institute of Technology, Addis Ababa</address>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="contact-phone">
-                            <i class="ion-ios-telephone-outline"></i>
-                            <h3>Phone Number</h3>
-                            <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="contact-email">
-                            <i class="ion-ios-email-outline"></i>
-                            <h3>Email</h3>
-                            <p><a href="mailto:info@example.com">esss@gmail.com</a></p>
-                        </div>
-                    </div>
-
-                </div>
-
-
+                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+              </div>
             </div>
-        </section><!-- End Contact Section -->
 
-    </main><!-- End #main -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/3.jpg" alt="Cole Emmerich">
+                </div>
+                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+              </div>
+            </div>
 
-    <%- include ("./partials/footer"); %>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/4.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+              </div>
+            </div>
 
-        <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/5.jpg" alt="Alejandrin Littel">
+                </div>
+                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+              </div>
+            </div>
 
-        <!-- Vendor JS Files -->
-        <script src="assets/vendor/jquery/jquery.min.js"></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-        <script src="assets/vendor/php-email-form/validate.js"></script>
-        <script src="assets/vendor/venobox/venobox.min.js"></script>
-        <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-        <script src="assets/vendor/superfish/superfish.min.js"></script>
-        <script src="assets/vendor/hoverIntent/hoverIntent.js"></script>
-        <script src="assets/vendor/aos/aos.js"></script>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>04:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/6.jpg" alt="Willow Trantow">
+                </div>
+                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+              </div>
+            </div>
 
-        <!-- Template Main JS File -->
-        <script src="assets/js/main.js"></script>
+          </div>
+          <!-- End Schdule Day 1 -->
 
-        </body>
+          <!-- Schdule Day 2 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
 
-        </html>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/1.jpg" alt="Brenden Legros">
+                </div>
+                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
+                <p>Facere provident incidunt quos voluptas.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/2.jpg" alt="Hubert Hirthe">
+                </div>
+                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/3.jpg" alt="Cole Emmerich">
+                </div>
+                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/4.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/5.jpg" alt="Alejandrin Littel">
+                </div>
+                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>04:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="assets/img/speakers/6.jpg" alt="Willow Trantow">
+                </div>
+                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- End Schdule Day 2 -->
+
+      
+
+        </div>
+
+      </div>
+
+    </section><!-- End Schedule Section -->
+
+    <!-- ======= Venue Section ======= -->
+    <section id="venue">
+
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Office</h2>
+          <p>Our location info and gallery</p>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-lg-6 venue-map">
+            <iframe
+                src="https://maps.google.com/maps?q=Addis%20Ababa%20Institute%20of%20Technology&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
+               
+        </div>
+          <div class="col-lg-6 venue-info">
+            <div class="row justify-content-center">
+              <div class="col-11 col-lg-8">
+                <h3>5 kilo Addis Ababa Technology Institute, Addis Ababa</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    
+
+    </section><!-- End Venue Section -->
+
+      <!-- ======= Video streaming Section ======= -->
+      <section id="hotels" class="section-with-bg">
+        <% const objPost=posts.pop() %>
+            <% console.log("Current post: " + objPost) %>
+            <% console.log("previous post: " + posts[posts.length-1]) %>
+
+            <div class=" container" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>Live Stream</h2>
+                    <p>Currently is live stream</p>
+                </div>
+               
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="<%= objPost.video %>" allowfullscreen></iframe>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-md-8">
+                       
+
+                        <h2 style="text-align: center;">Title: <%= objPost.title %>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mt-2">
+                        <p>Presented By <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30"
+                                height="30" viewBox="0 0 172 172" style=" fill:#000000;margin-left: 10px;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#d45500">
+                                        <path
+                                            d="M10.32,24.08c-5.65719,0 -10.32,4.66281 -10.32,10.32v103.2c0,5.65719 4.66281,10.32 10.32,10.32h151.36c5.65719,0 10.32,-4.66281 10.32,-10.32v-103.2c0,-5.65719 -4.66281,-10.32 -10.32,-10.32zM10.32,30.96h151.36c1.94844,0 3.44,1.49156 3.44,3.44v103.2c0,1.94844 -1.49156,3.44 -3.44,3.44h-29.67c-5.83187,-3.88344 -12.44312,-6.1275 -17.845,-8.385c-5.53625,-2.31125 -9.21812,-4.60906 -10.4275,-7.4175c-0.28219,-3.56094 -0.34937,-6.47687 -0.3225,-9.89c0.33594,-0.38969 0.86,-0.63156 1.1825,-1.075c0.81969,-1.12875 1.63938,-2.49937 2.365,-3.9775c1.22281,-2.51281 2.05594,-5.4825 2.58,-8.4925c0.90031,-0.51062 1.85438,-0.57781 2.58,-1.505c1.47813,-1.88125 2.4725,-4.54187 2.9025,-8.17c0.37625,-3.14437 -0.645,-5.36156 -1.935,-7.095c1.42438,-4.66281 3.17125,-11.94594 2.58,-19.565c-0.33594,-4.21937 -1.3975,-8.58656 -3.9775,-12.1475c-2.44562,-3.38625 -6.45,-5.76469 -11.5025,-6.665c-3.29219,-3.64156 -8.45219,-5.375 -14.5125,-5.375c-13.66594,0.25531 -22.64219,5.93938 -26.445,14.62c-3.60125,8.22375 -2.76812,18.44969 -0.215,29.025c-1.34375,1.73344 -2.43219,3.9775 -2.0425,7.2025c0.43,3.62813 1.42438,6.28875 2.9025,8.17c0.72563,0.92719 1.67969,1.00781 2.58,1.505c0.5375,3.02344 1.42438,5.97969 2.6875,8.4925c0.73906,1.47813 1.53188,2.84875 2.365,3.9775c0.3225,0.43 0.84656,0.68531 1.1825,1.075c0.02688,3.37281 0.05375,6.28875 -0.215,9.7825c-1.14219,2.86219 -4.89125,5.18688 -10.535,7.525c-5.42875,2.2575 -11.99969,4.50156 -17.845,8.385h-29.7775c-1.94844,0 -3.44,-1.49156 -3.44,-3.44v-103.2c0,-1.94844 1.49156,-3.44 3.44,-3.44zM85.6775,48.16c0.04031,0 0.06719,0 0.1075,0c5.72438,0.02688 9.29875,1.72 10.2125,3.3325l0.86,1.505l1.72,0.215c3.91031,0.5375 5.97969,2.05594 7.525,4.1925c1.54531,2.13656 2.41875,5.18688 2.6875,8.6c0.5375,6.82625 -1.43781,14.86188 -2.6875,18.5975l-0.86,2.6875l2.365,1.3975c-0.33594,-0.20156 0.91375,0.36281 0.645,2.58c-0.33594,2.78156 -1.06156,4.16563 -1.505,4.73c-0.44344,0.56438 -0.56437,0.44344 -0.43,0.43l-2.9025,0.215l-0.215,2.9025c-0.25531,2.41875 -1.33031,5.38844 -2.4725,7.74c-0.57781,1.1825 -1.10187,2.20375 -1.6125,2.9025c-0.30906,0.41656 -0.52406,0.72563 -0.645,0.86l-1.935,0.9675v2.0425c0,4.17906 -0.12094,7.57875 0.3225,12.47v0.5375l0.215,0.43c2.31125,6.19469 8.35813,9.08375 14.405,11.61c1.43781,0.60469 2.71438,1.34375 4.1925,1.935h-59.2325c1.47813,-0.59125 2.74125,-1.33031 4.1925,-1.935c6.07375,-2.52625 12.09375,-5.40187 14.405,-11.61l0.215,-0.43v-0.5375c0.44344,-4.89125 0.3225,-8.29094 0.3225,-12.47v-2.0425l-1.72,-0.86c0.01344,0.01344 0,-0.05375 -0.1075,-0.1075c-0.14781,-0.13437 -0.44344,-0.44344 -0.7525,-0.86c-0.52406,-0.69875 -1.12875,-1.72 -1.72,-2.9025c-1.1825,-2.35156 -2.21719,-5.34812 -2.4725,-7.74l-0.215,-2.795l-2.9025,-0.3225c0.12094,0.01344 0.01344,0.13438 -0.43,-0.43c-0.44344,-0.56437 -1.16906,-1.94844 -1.505,-4.73c-0.26875,-2.21719 0.98094,-2.78156 0.645,-2.58l2.15,-1.29l-0.645,-2.4725c-2.71437,-10.44094 -3.07719,-19.92781 -0.3225,-26.23c2.74125,-6.27531 8.19688,-10.29312 20.1025,-10.535z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></p>
+                        <hr style="border-top: 1px solid #d45500;">
+                        <p class="mt-3">
+                            <%= objPost.presentedBy %>
+                        </p>
+                    </div>
+                    <div class="col-md-4 mt-2">
+                        <p>Presentation Description <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="30" height="30" viewBox="0 0 172 172"
+                                style=" fill:#000000;margin-left: 10px;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#d45500">
+                                        <path
+                                            d="M152.5425,6.88c-3.23844,0 -6.57094,1.19594 -9.03,3.655l-4.6225,4.73l17.845,17.845c-0.01344,0.01344 4.73,-4.6225 4.73,-4.6225c4.93156,-4.93156 4.93156,-13.02094 0,-17.9525c-2.4725,-2.4725 -5.68406,-3.655 -8.9225,-3.655zM133.3,20.425l-78.1525,78.1525l-0.215,1.075l-3.225,16.6625l-1.075,5.0525l5.0525,-1.075l16.6625,-3.225l1.075,-0.215l78.1525,-78.1525l-4.945,-4.8375l-76.54,76.4325l-8.385,-8.385l76.4325,-76.54zM10.32,34.4c-1.90812,0 -3.44,1.54531 -3.44,3.44v123.84c0,1.89469 1.53188,3.44 3.44,3.44h123.84c1.90813,0 3.44,-1.54531 3.44,-3.44v-99.76l-6.88,6.88v89.44h-116.96v-116.96h89.44l6.88,-6.88z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></p>
+                        <hr style="border-top: 1px solid #d45500;">
+                        <p class="mt-3">
+                            <%= objPost.description %>
+                        </p>
+                    </div>
+                    <div class="col-md-4 mt-2">
+                        <a href="<%= objPost.resource %>" target="_blank">View Shared Files <svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                                viewBox="0 0 172 172" style=" fill:#000000;margin-left: 10px;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#d45500">
+                                        <path
+                                            d="M106.64,17.2c-2.92937,0 -6.16781,1.16906 -8.93594,3.7625c-2.76813,2.60688 -4.82406,6.74563 -4.82406,12.06688c0,3.85656 1.35719,6.27531 2.28438,8.77469c1.04812,2.9025 4.38062,10.50812 7.60562,17.80469c2.10969,4.79719 2.92938,6.62469 4.085,9.19125h-82.775c-7.55187,0 -13.76,6.20813 -13.76,13.76c0,7.55188 6.20813,13.76 13.76,13.76h32.73375c-0.86,1.73344 -1.77375,3.46688 -1.77375,5.84531c0,5.03906 2.33813,8.47906 4.63594,10.79031c-2.31125,2.10969 -4.63594,5.375 -4.63594,10.19906c0,7.82063 4.97188,11.23375 8.31781,13.03438c-0.72563,1.84094 -1.43781,4.28656 -1.43781,7.25625c0,3.56094 1.77375,6.9875 4.71656,9.83625c2.92937,2.83531 7.26969,4.95844 12.48344,4.95844h51.6c17.01188,0 30.96,-13.94812 30.96,-30.96v-32.34406c0,-6.51719 -1.94844,-12.77906 -5.805,-18.1675c0,0 0,-0.01344 -0.01344,-0.01344l-38.52531,-52.97062c-2.59344,-4.15219 -6.59781,-6.58438 -10.69625,-6.58438zM106.64,24.08c1.31688,0 3.42656,0.91375 4.95844,3.49375c0.05375,0.08063 0.12094,0.16125 0.17469,0.24188l38.51187,52.95719c3.02344,4.24625 4.515,8.98969 4.515,14.16312v32.34406c0,13.26281 -10.81719,24.08 -24.08,24.08h-51.6c-3.38625,0 -5.92594,-1.31687 -7.72656,-3.03687c-1.78719,-1.72 -2.59344,-3.96406 -2.59344,-4.87781c0,-4.085 1.78719,-6.62469 1.78719,-6.62469c0.61813,-0.87344 0.77938,-1.97531 0.47031,-2.99656c-0.3225,-1.02125 -1.10187,-1.8275 -2.09625,-2.20375c0,0 -7.04125,-2.795 -7.04125,-8.46563c0,-5.03906 4.71656,-6.78594 4.71656,-6.78594c1.23625,-0.49719 2.06937,-1.65281 2.16344,-2.98312c0.08063,-1.33031 -0.61812,-2.58 -1.77375,-3.225c0,0 -5.10625,-2.95625 -5.10625,-7.99531c0,-3.45344 1.97531,-5.24063 3.74906,-6.42313c1.26312,-0.83312 1.8275,-2.40531 1.3975,-3.85656c-0.44344,-1.45125 -1.77375,-2.44563 -3.30563,-2.44563h-39.68094c-3.80281,0 -6.88,-3.07719 -6.88,-6.88c0,-3.80281 3.07719,-6.88 6.88,-6.88h88.05594c1.16906,0 2.2575,-0.59125 2.88906,-1.57219c0.645,-0.98094 0.73906,-2.21719 0.25531,-3.27875c0,0 -2.99656,-6.69188 -6.22156,-14.00188c-3.225,-7.29656 -6.74562,-15.48 -7.43094,-17.38812c-0.01344,-0.02688 -0.01344,-0.04031 -0.02688,-0.05375c-1.12875,-3.02344 -1.84094,-4.03125 -1.84094,-6.35594c0,-3.64156 1.20938,-5.68406 2.64719,-7.04125c1.45125,-1.35719 3.38625,-1.90813 4.23281,-1.90813z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></a>
+                        <hr style="border-top: 1px solid #d45500;">
+                    </div>
+                </div>
+            </div>
+    </section><!-- End Video Streaming Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery">
+
+      <div class="container" data-aos="fade-up">
+  
+        <div class="section-header">
+          <h2>Gallery</h2>
+          <p>15th General Assembly</p>
+        </div>
+      </div>
+      
+      <div class="owl-carousel gallery-carousel" data-aos="fade-up" data-aos-delay="100">
+        <a href="./assets/img/GAs/GA 1.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/GAs/GA 1.png" alt=""></a>
+        <a href="./assets/img/GAs/GA 2.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/GAs/GA 2.png" alt=""></a>
+        <a href="./assets/img/GAs/GA 3.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/GAs/GA 3.png" alt=""></a>
+        <a href="./assets/img/GAs/GA 4.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/GAs/GA 4.png" alt=""></a>
+        <a href="./assets/img/GAs/GA 5.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/GAs/GA 5.png" alt=""></a>
+        <a href="./assets/img/GAs/GA 6.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/GAs/GA 6.png" alt=""></a>
+        <a href="./assets/img/GAs/GA 7.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/GAs/GA 7.png" alt=""></a>
+        <a href="./assets/img/GAs/GA 8.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/GAs/GA 8.png" alt=""></a>
+        <a href="./assets/img/GAs/GA 9.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/GAs/GA 9.png" alt=""></a>
+        <a href="./assets/img/GAs/GA 10.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/GAs/GA 10.png" alt=""></a>
+       </div>
+  
+        <div class="section-header mt-5">
+                    <p>AstroBus Ethiopia</p>
+        </div>
+      </div>
+
+      <div class="owl-carousel gallery-carousel" data-aos="fade-up" data-aos-delay="100">
+        <a href="./assets/img/AstroBus/አስትሮባስ 5.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/AstroBus/አስትሮባስ 5.png" alt=""></a>
+        <a href="./assets/img/AstroBus/አስትሮባስ 7.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/AstroBus/አስትሮባስ 7.png" alt=""></a>
+        <a href="./assets/img/AstroBus/አስትሮባስ 9.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/AstroBus/አስትሮባስ 9.png" alt=""></a>
+        <a href="./assets/img/AstroBus/አስትሮባስ 10.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/AstroBus/አስትሮባስ 10.png" alt=""></a>
+        <a href="./assets/img/AstroBus/አስትሮባስ 11.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/AstroBus/አስትሮባስ 11.png" alt=""></a>
+        <a href="./assets/img/AstroBus/አስትሮባስ 14.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/AstroBus/አስትሮባስ 14.png" alt=""></a>
+      </div>
+
+      <div class="section-header mt-5">
+        <p>Public Outreach</p>
+      </div>
+    </div>
+
+    <div class="owl-carousel gallery-carousel" data-aos="fade-up" data-aos-delay="100">
+      <a href="./assets/img/Outreach/PE-01.jpg" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/Outreach/PE-01.jpg" alt=""></a>
+      <a href="./assets/img/Outreach/PE-02.jpg" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/Outreach/PE-02.jpg" alt=""></a>
+      <a href="./assets/img/Outreach/PE-03.jpg" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/Outreach/PE-03.jpg" alt=""></a>
+      <a href="./assets/img/Outreach/PE-04.jpg" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/Outreach/PE-04.jpg" alt=""></a>
+      <a href="./assets/img/Outreach/PE-05.jpg" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/Outreach/PE-05.jpg" alt=""></a>
+      <a href="./assets/img/Outreach/PE-06.jpg" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/Outreach/PE-06.jpg" alt=""></a>
+      <a href="./assets/img/Outreach/PE-07.jpg" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/Outreach/PE-07.jpg" alt=""></a>
+      <a href="./assets/img/Outreach/PE-08.jpg" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/Outreach/PE-08.jpg" alt=""></a>
+      <a href="./assets/img/Outreach/PE-09.jpg" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/Outreach/PE-09.jpg" alt=""></a>
+      <a href="./assets/img/Outreach/PE-10.jpg" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/Outreach/PE-10.jpg" alt=""></a>
+    </div>
+
+    <div class="section-header mt-5">
+      <p>Solar Eclipse</p>
+    </div>
+  </div>
+
+  <div class="owl-carousel gallery-carousel" data-aos="fade-up" data-aos-delay="100">
+    <a href="./assets/img/eclipse/tis abay.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/eclipse/tis abay.png" alt=""></a>
+    <a href="./assets/img/eclipse/ግርዶሽ 1.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/eclipse/ግርዶሽ 1.png" alt=""></a>
+    <a href="./assets/img/eclipse/ግርዶሽ 2.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/eclipse/ግርዶሽ 2.png" alt=""></a>
+    <a href="./assets/img/eclipse/ግርዶሽ 3.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/eclipse/ግርዶሽ 3.png" alt=""></a>
+    <a href="./assets/img/eclipse/ግርዶሽ 4.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/eclipse/ግርዶሽ 4.png" alt=""></a>
+    <a href="./assets/img/eclipse/ግርዶሽ 5.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/eclipse/ግርዶሽ 5.png" alt=""></a>
+    <a href="./assets/img/eclipse/ግርዶሽ 6.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/eclipse/ግርዶሽ 6.png" alt=""></a>
+    <a href="./assets/img/eclipse/ግርዶሽ 7.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/eclipse/ግርዶሽ 7.png" alt=""></a>
+    <a href="./assets/img/eclipse/ግርዶሽ 8.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/eclipse/ግርዶሽ 8.png" alt=""></a>
+    <a href="./assets/img/eclipse/ግርዶሽ 9.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/eclipse/ግርዶሽ 9.png" alt=""></a>
+    <a href="./assets/img/eclipse/ግርዶሽ 10.png" class="venobox" data-gall="gallery-carousel"><img src="./assets/img/eclipse/ግርዶሽ 10.png" alt=""></a>
+    </div>
+
+  
+    </section><!-- End Gallery Section -->
+
+    
+
+    <!-- =======  F.A.Q Section ======= -->
+    <section id="faq">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>F.A.Q </h2>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-9">
+            <ul id="faq-list">
+
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#faq1">How can I be a member? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq1" class="collapse" data-parent="#faq-list">
+                  <p>
+                    You can come to the office during the office opening hours and register for membership.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq2" class="collapsed">Do I need to be an Engineer, Astrophysicist, or science student to join the ESSS? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq2" class="collapse" data-parent="#faq-list">
+                  <p>
+                    No, Space Science, generally speaking, has a wide domain that almost requires the involvement of people from different educational and societal backgrounds. 
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq3" class="collapsed">Where is the Ethiopian Space Science Society located? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq3" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Our main office is found at Addis Ababa Institute of Technology, 4th floor, Romm Number 405.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq4" class="collapsed">What time is it best if I come in to register as a member? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq4" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Our office is open Mondays- Fridays from 8:30 am- 5:00 pm
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a data-toggle="collapse" href="#faq5" class="collapsed">What do I need to bring when I come to register? <i class="fa fa-minus-circle"></i></a>
+                <div id="faq5" class="collapse" data-parent="#faq-list">
+                  <p>
+                    You need two headshots 3x4 photographs and 20 birrs for those of you below 18 of age and 120 birrs above.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- End  F.A.Q Section -->
+
+ 
+   
+
+  
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="section-bg">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>Keep in touch</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>5 kilo, Addis Ababa Institute of Technology, Addis Ababa</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+251118677699">+251 118 67 76 99</a></p>
+              <p><a href="tel:+251111261200">+251 111 26 12 00</a></p>
+              <p><a href="tel:+251922723745">+251 922 72 37 45</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:ethiopianspace@gmail.com">ethiopianspace@gmail.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <img src="assets/img/essslogo.png" alt="TheEvenet">
+            <p>Ethiopian space science society was established in 2004, with 47 founding members. It is a non-profitable organization constitute of members from Astronomy , Astrophysics , Space Science and technology and related field of professionals as well as individual and institutional members interested in the above fields. The society has more than 10,000 individual  members, 28 branches associations, 52 institutional members  and 100 school space clubs</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="./index">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#about">About us</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              5 kilo <br>
+              Addis Ababa, AAiT 5th Floor<br>
+              Ethiopia <br>
+              <strong>Phone:</strong> +251 118 67 76 99<br>
+              <strong>Email:</strong> ethiopianspace@gmail.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="https://twitter.com/ethiosss" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/EthioSSS" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/officialesss/" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/ethiopian-space-science-society/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Tefer Technology</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+      -->
+        Designed by <a href="https://t.me/sassy_bgs">Tefer Technology</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/superfish/superfish.min.js"></script>
+  <script src="assets/vendor/hoverIntent/hoverIntent.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
