@@ -505,14 +505,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
 }
 
-@media (min-width: 954px) {
+@media (min-width: 950px) {
   #intro {
-    margin-left: -600px;
+    margin-left: -550px;
   }
 }
 @media (max-width: 954px) {
   #intro {
-    margin-left: -650px;
+    margin-left: -550px;
     background-attachment: fixed;
   }
 }
