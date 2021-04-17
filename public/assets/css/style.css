@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color:rgba(6, 12, 34, 0.8);
     width: 2000px;
     height: 100%;
-    margin-left: -100px;
+    margin-left: -50px;
     overflow-x: hidden;
   }
   .intro-container{
@@ -173,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   #introduction {
     width: 2000px;
     height: 100%;
-    margin-left: -200px;
+    margin-left: -50px;
   }
 }
 
